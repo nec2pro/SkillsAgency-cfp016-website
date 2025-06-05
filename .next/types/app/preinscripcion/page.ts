@@ -1,4 +1,4 @@
-// File: E:\Agencia de Habilidades\@resources\wwwcfp16com\src\app\preinscripcion\page.tsx
+// File: E:\GitHubs\nec2pro\SkillsAgency-cfp016-website\src\app\preinscripcion\page.tsx
 import * as entry from '../../../../src/app/preinscripcion/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

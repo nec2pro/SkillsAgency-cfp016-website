@@ -27,20 +27,25 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-gradient-to-r from-[#00ffd5] to-[#10b002] shadow-lg">
+    <nav className="bg-gradient-to-r from-[#268FCD] to-[#5DA24A] shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="block">
+            <Link href="/" className="flex items-center">
               <Image
-                src="/images/logo/logo.png"
+                src="/images/logo/logo_white.png"
                 alt="Centro de Formación Profesional"
-                width={120}
+                width={60}
                 height={40}
-                className="h-10 w-auto"
+                className="h-10 w-auto mr-2"
                 priority
               />
+              <div className="text-white text-xs font-light leading-none">
+                <div>CENTRO DE FORMACIÓN</div>
+                <div>PROFESIONAL</div>
+                <div>N°16</div>
+              </div>
             </Link>
           </div>
           
@@ -79,24 +84,24 @@ export default function Navbar() {
           {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
-              <Link href="/" className="text-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
-                <HomeIcon className="h-5 w-5 mr-1 text-emerald-800" />
+              <Link href="/" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
+                <HomeIcon className="h-5 w-5 mr-1 text-white" />
                 Inicio
               </Link>
-              <Link href="/oferta-formativa" className="text-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
-                <BookOpenIcon className="h-5 w-5 mr-1 text-emerald-800" />
+              <Link href="/oferta-formativa" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
+                <BookOpenIcon className="h-5 w-5 mr-1 text-white" />
                 Oferta Formativa
               </Link>
-              <Link href="/preinscripcion" className="text-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
-                <ClipboardDocumentIcon className="h-5 w-5 mr-1 text-emerald-800" />
+              <Link href="/preinscripcion" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
+                <ClipboardDocumentIcon className="h-5 w-5 mr-1 text-white" />
                 Preinscripción
               </Link>
-              <Link href="/nosotros" className="text-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
-                <UserGroupIcon className="h-5 w-5 mr-1 text-emerald-800" />
+              <Link href="/nosotros" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
+                <UserGroupIcon className="h-5 w-5 mr-1 text-white" />
                 Nosotros
               </Link>
-              <Link href="/contacto" className="text-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
-                <PhoneIcon className="h-5 w-5 mr-1 text-emerald-800" />
+              <Link href="/contacto" className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center">
+                <PhoneIcon className="h-5 w-5 mr-1 text-white" />
                 Contacto
               </Link>
             </div>
@@ -124,14 +129,14 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-gradient-to-r from-[#00ffd5] to-[#10b002] shadow-lg z-50">
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-gradient-to-r from-[#268FCD] to-[#5DA24A] shadow-lg z-50">
             <div className="px-4 py-2 space-y-1">
               <Link
                 href="/"
                 className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <HomeIcon className="h-5 w-5 mr-2 text-emerald-800" />
+                <HomeIcon className="h-5 w-5 mr-2 text-white" />
                 Inicio
               </Link>
               <Link
@@ -139,7 +144,7 @@ export default function Navbar() {
                 className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <BookOpenIcon className="h-5 w-5 mr-2 text-emerald-800" />
+                <BookOpenIcon className="h-5 w-5 mr-2 text-white" />
                 Oferta Formativa
               </Link>
               <Link
@@ -147,7 +152,7 @@ export default function Navbar() {
                 className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <ClipboardDocumentIcon className="h-5 w-5 mr-2 text-emerald-800" />
+                <ClipboardDocumentIcon className="h-5 w-5 mr-2 text-white" />
                 Preinscripción
               </Link>
               <Link
@@ -155,7 +160,7 @@ export default function Navbar() {
                 className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <UserGroupIcon className="h-5 w-5 mr-2 text-emerald-800" />
+                <UserGroupIcon className="h-5 w-5 mr-2 text-white" />
                 Nosotros
               </Link>
               <Link
@@ -163,7 +168,7 @@ export default function Navbar() {
                 className="block text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 flex items-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <PhoneIcon className="h-5 w-5 mr-2 text-emerald-800" />
+                <PhoneIcon className="h-5 w-5 mr-2 text-white" />
                 Contacto
               </Link>
             </div>

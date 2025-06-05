@@ -6,6 +6,14 @@ import Link from 'next/link'
 
 const slides = [
   {
+    id: 3,
+    title: 'Inscripciones Abiertas',
+    description: '¡No pierdas la oportunidad de formarte en lo que te apasiona!',
+    image: '/images/hero-3.jpg',
+    cta: 'Inscribite ahora',
+    link: '/preinscripcion'
+  },
+  {
     id: 1,
     title: 'Formación Profesional de Calidad',
     description: 'Preparate para el futuro con nuestros programas actualizados y profesores expertos',
@@ -20,14 +28,6 @@ const slides = [
     image: '/images/hero-2.jpg',
     cta: 'Descubrí más',
     link: '/nosotros'
-  },
-  {
-    id: 3,
-    title: 'Inscripciones Abiertas',
-    description: '¡No pierdas la oportunidad de formarte en lo que te apasiona!',
-    image: '/images/hero-3.jpg',
-    cta: 'Inscribite ahora',
-    link: '/preinscripcion'
   }
 ]
 
