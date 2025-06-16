@@ -73,7 +73,3 @@ Las contribuciones son bienvenidas. Por favor, lee las guías de contribución a
 ## 📄 Licencia
 Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
-## 📞 Contacto
-- 📧 Email: cfp.n16@bue.edu.ar
-- 🌐 Web: [www.cfp16.com](http://www.cfp16.com)
-- 📍 Dirección: Av. Castañares 2650, CABA 

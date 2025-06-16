@@ -1,4 +1,4 @@
-// File: E:\GitHubs\nec2pro\SkillsAgency-cfp016-website\src\app\contacto\page.tsx
+// File: C:\Users\nec2m\Documents\GitHubs\nec2pro\SkillsAgency-cfp016-website\src\app\contacto\page.tsx
 import * as entry from '../../../../src/app/contacto/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -232,35 +232,6 @@ export default function OfertaFormativa() {
     <div className="bg-white p-6 rounded-xl shadow-lg">
       <h2 className="text-xl font-bold mb-6">Filtros</h2>
 
-      {/* Filtro por Tipo */}
-      <div className="mb-6">
-        <h3 className="text-lg font-semibold mb-3">Tipo de Formación</h3>
-        <div className="space-y-2">
-          {[
-            "trayectos",
-            "capacitaciones",
-            "ENOF",
-            "terminalidad",
-            "cursos",
-          ].map((type) => (
-            <label
-              key={type}
-              className="flex items-center gap-2 cursor-pointer"
-            >
-              <input
-                type="checkbox"
-                checked={selectedTypes.includes(type as FilterType)}
-                onChange={() => toggleType(type as FilterType)}
-                className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500"
-              />
-              <span className="text-gray-700">
-                {type.charAt(0).toUpperCase() + type.slice(1)}
-              </span>
-            </label>
-          ))}
-        </div>
-      </div>
-
       {/* Filtro por Sede */}
       <div className="mb-6">
         <h3 className="text-lg font-semibold mb-3">Sede</h3>
@@ -288,7 +259,7 @@ export default function OfertaFormativa() {
       <div className="mb-6">
         <h3 className="text-lg font-semibold mb-3">Familia Profesional</h3>
         <div className="space-y-2">
-          {["informatica", "sanitarista", "electricista", "gasista"].map(
+          {["energia", "construccion", "informatica"].map(
             (familia) => (
               <label
                 key={familia}
@@ -301,11 +272,40 @@ export default function OfertaFormativa() {
                   className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500"
                 />
                 <span className="text-gray-700">
-                  Familia {familia.charAt(0).toUpperCase() + familia.slice(1)}
+                  Área {familia.charAt(0).toUpperCase() + familia.slice(1)}
                 </span>
               </label>
             )
           )}
+        </div>
+      </div>
+
+      {/* Filtro por Tipo */}
+      <div className="mb-6">
+        <h3 className="text-lg font-semibold mb-3">Tipo de Formación</h3>
+        <div className="space-y-2">
+          {[
+            "trayectos",
+            "capacitaciones",
+            "ENOF",
+            "terminalidad",
+            "cursos",
+          ].map((type) => (
+            <label
+              key={type}
+              className="flex items-center gap-2 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                checked={selectedTypes.includes(type as FilterType)}
+                onChange={() => toggleType(type as FilterType)}
+                className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500"
+              />
+              <span className="text-gray-700">
+                {type.charAt(0).toUpperCase() + type.slice(1)}
+              </span>
+            </label>
+          ))}
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ export default function Home() {
       {/* Programas Section */}
       <section className="py-16 bg-gradient-to-r from-[#268FCD] to-[#5DA24A]">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {/* Trayectos */}
             <div className="relative h-32 md:h-64 rounded-xl overflow-hidden group cursor-pointer">
               <Image
@@ -51,13 +51,13 @@ export default function Home() {
             <div className="relative h-32 md:h-64 rounded-xl overflow-hidden group cursor-pointer">
               <Image
                 src="/images/cards/enof.jpg"
-                alt="ENOF"
+                alt="Cursos (ENOF)"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <h3 className="text-xl md:text-2xl font-bold text-white text-center px-4 transition-colors duration-300 group-hover:text-emerald-400">ENOF</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-white text-center px-4 transition-colors duration-300 group-hover:text-emerald-400">Cursos (ENOF)</h3>
               </div>
             </div>
 
@@ -72,20 +72,6 @@ export default function Home() {
               <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <h3 className="text-xl md:text-2xl font-bold text-white text-center px-4 transition-colors duration-300 group-hover:text-emerald-400">Terminalidad Primaria y Secundaria</h3>
-              </div>
-            </div>
-
-            {/* Cursos */}
-            <div className="relative h-32 md:h-64 rounded-xl overflow-hidden group cursor-pointer">
-              <Image
-                src="/images/cards/talleres.jpg"
-                alt="Cursos"
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h3 className="text-xl md:text-2xl font-bold text-white text-center px-4 transition-colors duration-300 group-hover:text-emerald-400">Cursos</h3>
               </div>
             </div>
           </div>
